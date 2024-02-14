@@ -43,13 +43,20 @@ h2{
 nav li{
   display:inline;
   padding-right:20px;
-
 }
 
 nav a{
   color: black;
   font-weight: bold;
   text-decoration: none; 
+}
+
+nav a:hover{
+  text-decoration: underline;
+}
+
+nav a:focus{
+  text-decoration: underline;
 }
 
 
