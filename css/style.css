@@ -127,7 +127,6 @@ a:focus, a:hover{
   position: static;
   width: auto;
   height: auto;
-  top: 20px;
 }
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
@@ -140,6 +139,7 @@ a:focus, a:hover{
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
   row-gap: 15px;
+  align-items: center;
 }
 
 /* Step 5: Write selector/rule property to add the background image to the 
@@ -185,6 +185,7 @@ first div in the grid  and place it in the grid. */
   overflow: hidden;
   grid-row: 2;
   align-items: center;
+  position:relative;
 }
 
 .method-image{
@@ -268,7 +269,8 @@ nav{
  .text-block{
   max-height: 250px;
   text-align: center;
-  justify-items: center;
+
+  position:absolute;
 }
 
 }
