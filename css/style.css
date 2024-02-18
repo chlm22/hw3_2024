@@ -125,8 +125,6 @@ a:focus, a:hover{
 .skip a:focus{ 
   /* div.skip a:focus */
   position: static;
-  width: auto;
-  height: auto;
 }
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
