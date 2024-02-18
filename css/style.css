@@ -114,15 +114,20 @@ a:focus, a:hover{
 
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
 
-.skip{
+.skip a{
   position: absolute;
   left: -1000px;
   top: 40px;
+  overflow: hidden;
 }
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
-.skip:focus{
-  bottom: 20px;
+.skip a:focus{ 
+  /* div.skip a:focus */
+  position: static;
+  width: auto;
+  height: auto;
+  top: 20px;
 }
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
@@ -205,7 +210,7 @@ first div in the grid  and place it in the grid. */
 }
 
  /* Step 8: Write the selector/rule property to style the .text-block class. */
-.text-block{
+div.text-block{
   text-align: center;
   position: relative;
 }
@@ -214,6 +219,7 @@ first div in the grid  and place it in the grid. */
 
   /* Step 9: Write the selector/rule property to style the nav element */
 nav{
+  text-align: right;
   padding: 30px 0px 30px 0px;
 }
  
