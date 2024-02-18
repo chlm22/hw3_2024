@@ -134,18 +134,19 @@ a:focus, a:hover{
 .container{
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-row-gap: 15px;
+  row-gap: 15px;
 }
 
 /* Step 5: Write selector/rule property to add the background image to the 
 first div in the grid  and place it in the grid. */
-div.overview{
+.container > .overview{
   grid-column: 1/span 3;
-  background-image: url('images/header.jpg');
-  background-attachment: fixed; /* Parallax effect */     
+  background-image: url('/images/header.jpg');
+  background-attachment:fixed; /* Parallax effect */     
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
-  background-size: cover;       /* Parallax effect */
+  background-size:cover;       /* Parallax effect */
+  height: 400px;                /* Parallax effect */
 }
 
 
@@ -207,7 +208,7 @@ div.overview{
   justify-content: center;
 }
 /* Add your media query here */
-@media screen and (min-width: 799px){
+@media screen and (min-width: 800px){
 
   /* Step 9: Write the selector/rule property to style the nav element */
 nav{
@@ -259,7 +260,7 @@ nav{
  .text-block{
   max-height: 250px;
   text-align: center;
-  overflow:visible;
+
 }
 
 }
