@@ -2,22 +2,6 @@ html{
   scroll-behavior: smooth;
 }
 
-.skip{
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-.skip:focus{
-  position: static;
-  width: auto;
-  height: auto;
-  border: 2px solid #ffffff;
-}
-
 body{
   background-color: #737373;
   font-size: 18px;
@@ -59,21 +43,13 @@ h2{
 nav li{
   display:inline;
   padding-right:20px;
+
 }
 
 nav a{
   color: black;
   font-weight: bold;
   text-decoration: none; 
-}
-
-nav a:hover{
-  text-decoration: underline;
-}
-
-nav a:focus{
-  text-decoration: underline;
-  border: 2px solid #ffffff;
 }
 
 
@@ -175,4 +151,3 @@ first div in the grid  and place it in the grid. */
 
 
  /* Step 13:Write the selector/rule property to update the .text-block class */
-
