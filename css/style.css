@@ -140,7 +140,7 @@ a:focus, a:hover{
 /* Step 5: Write selector/rule property to add the background image to the 
 first div in the grid  and place it in the grid. */
 .container > .overview{
-  grid-column: 1/span 3;
+  grid-column: 1/-1;
   background-image: url('/images/header.jpg');
   background-attachment:fixed; /* Parallax effect */     
   background-position: center;  /* Parallax effect */
@@ -156,56 +156,58 @@ first div in the grid  and place it in the grid. */
       /*This will be a lot of rules.... but be strategic and combine seletors*/
 .about{
   grid-column: 2/span 1;
-  grid-row: 2/3;
+  grid-row: 2;
 }
 
 .method{
     grid-column: 2/span 1;
-    grid-row: 3/4;
+    grid-row: 3;
 }
 
 .clients{
   grid-column: 2/span 1;
-  grid-row: 4/5;
+  grid-row: 4;
 }
 
 .contact{
   grid-column: 2/span 1;
-  grid-row: 5/6;
+  grid-row: 5;
 }
 
 .about-image{
   grid-column: 1/ span3;
   max-height:  600px;
   overflow: hidden;
-  grid-row: 2/3;
+  grid-row: 2;
+  align-items: center;
 }
 
 .method-image{
   grid-column: 1/ span3;
   max-height:  600px;
   overflow: hidden;
-  grid-row: 3/4;
+  grid-row: 3;
 }
 
 .clients-image{
   grid-column: 1/ span3;
   max-height:  600px;
   overflow: hidden;
-  grid-row: 4/5;
+  grid-row: 4;
 }
 
 .contact-image{
   grid-column: 1/ span3;
   max-height:  600px;
   overflow: hidden;
-  grid-row: 5/6;
+  grid-row: 5;
+  position: relative;
 }
 
  /* Step 8: Write the selector/rule property to style the .text-block class. */
 .text-block{
   text-align: center;
-  justify-content: center;
+  position: relative;
 }
 /* Add your media query here */
 @media screen and (min-width: 800px){
@@ -260,7 +262,7 @@ nav{
  .text-block{
   max-height: 250px;
   text-align: center;
-
+  justify-items: center;
 }
 
 }
