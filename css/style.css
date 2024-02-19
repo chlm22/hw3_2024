@@ -116,15 +116,15 @@ a:focus, a:hover{
 
 .skip a{
   position: absolute;
-  left: -1000px;
-  top: 40px;
+  top: -40px;
   overflow: hidden;
 }
 
 /* Step 2b: Write selector/rule property to position the skip class element when it is in focus*/
 .skip a:focus{ 
   /* div.skip a:focus */
-  position: static;
+  position: absolute;
+  top: 20px;
 }
 
 /* Step 3: Write selector/rule property to style all elements when in focus*/
